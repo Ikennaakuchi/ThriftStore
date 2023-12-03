@@ -1,0 +1,6 @@
+com/ikennaprojects/inventoryservice/service/InventoryServiceImpl.class
+com/ikennaprojects/inventoryservice/repository/InventoryRepository.class
+com/ikennaprojects/inventoryservice/controller/InventoryController.class
+com/ikennaprojects/inventoryservice/service/InventoryService.class
+com/ikennaprojects/inventoryservice/InventoryServiceApplication.class
+com/ikennaprojects/inventoryservice/model/Inventory.class

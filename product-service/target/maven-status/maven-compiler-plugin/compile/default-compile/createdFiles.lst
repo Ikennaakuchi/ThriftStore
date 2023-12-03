@@ -1,0 +1,11 @@
+com/ikennaprojects/productservice/model/Product.class
+com/ikennaprojects/productservice/service/ProductServiceImpl.class
+com/ikennaprojects/productservice/dto/ProductResponse$ProductResponseBuilder.class
+com/ikennaprojects/productservice/model/Product$ProductBuilder.class
+com/ikennaprojects/productservice/dto/ProductRequest$ProductRequestBuilder.class
+com/ikennaprojects/productservice/dto/ProductResponse.class
+com/ikennaprojects/productservice/service/ProductService.class
+com/ikennaprojects/productservice/ProductServiceApplication.class
+com/ikennaprojects/productservice/controller/ProductController.class
+com/ikennaprojects/productservice/dto/ProductRequest.class
+com/ikennaprojects/productservice/repository/ProductRepository.class

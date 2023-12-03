@@ -1,0 +1,8 @@
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/ProductServiceApplication.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/model/Product.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/dto/ProductRequest.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/service/ProductServiceImpl.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/controller/ProductController.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/service/ProductService.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/dto/ProductResponse.java
+/Users/ikennaakuchi/Downloads/thrift-store/product-service/src/main/java/com/ikennaprojects/productservice/repository/ProductRepository.java
