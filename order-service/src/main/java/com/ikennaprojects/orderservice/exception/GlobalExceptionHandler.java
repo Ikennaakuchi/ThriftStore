@@ -1,25 +1,27 @@
 package com.ikennaprojects.orderservice.exception;
 
+import com.ikennaprojects.orderservice.dto.ExceptionResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
-@ControllerAdvice
+@RestControllerAdvice
+@Slf4j
 public class GlobalExceptionHandler {
-
-    private final Map<String, String> error = new HashMap<>();
-
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ExceptionHandler(OutOfStockException.class)
-    public Map<String, String> handleOutOfStockException(OutOfStockException ex){
-        error.put("error-code", "404");
-        error.put("error message", ex.getMessage());
-        error.put("date", String.valueOf(new Date()));
-        return error;
+    public ExceptionResponse handleOutOfStockException(OutOfStockException ex){
+
+        ExceptionResponse response = new ExceptionResponse();
+        response.setTimestamp(new Date());
+        response.setErrorMessage(ex.getMessage());
+        response.setErrorCode(400);
+
+        log.info("An error will be handled here {}", response);
+        return response;
     }
 }
