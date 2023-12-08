@@ -27,7 +27,7 @@ public class OrderRequestServiceImpl implements OrderService{
     private final WebClient.Builder webClientBuilder;
 
     @Override
-    public void placeOrder(OrderRequest orderRequest) {
+    public String placeOrder(OrderRequest orderRequest) {
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
 
@@ -54,6 +54,7 @@ public class OrderRequestServiceImpl implements OrderService{
         if(allProductsInStock){
             log.info("The items are currently in stock");
             orderRepository.save(order);
+            return "Order Placed Successfully";
         }else {
             log.info("The items are currently out of stock");
             throw new OutOfStockException("The Items are currently not available in stock");
